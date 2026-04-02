@@ -8,6 +8,7 @@ Tento repozitář obsahuje návrh startu projektu Android aplikace pro 3D rozpad
 - `docs/pipeline.md` — end-to-end pipeline pro 3D modely (skenování/modelování, optimalizace, metadata, export).
 - `docs/data-model.md` — návrh datového modelu pro díly, vazby mezi díly a vyhledávání.
 - `docs/roadmap.md` — praktický plán kroků od nuly do prvního použitelného prototypu.
+- `docs/parts-import.md` — implementovaný import part listu z OEMMotorparts do JSON.
 
 ## První doporučení
 
@@ -15,4 +16,16 @@ Tento repozitář obsahuje návrh startu projektu Android aplikace pro 3D rozpad
 2. Paralelně nastav Android projekt se SceneView + Filament.
 3. U každého dílu drž stejnou strukturu: `3D model + metadata + vazby`.
 4. Teprve pak škáluj na celý motocykl.
+
+
+## Import part listu
+
+Připravený skript:
+
+```bash
+python tools/scrape_oemmotorparts.py \
+  --model-url "https://www.oemmotorparts.com/en/model/kawasaki/zx-750-a-gpz-750-a1-a2-gpz-750/1983" \
+  --out-dir data/raw/oemmotorparts \
+  --json-out data/processed/zx750a1_parts.json
+```
 
