@@ -10,6 +10,7 @@ Tento repozitář obsahuje návrh startu projektu Android aplikace pro 3D rozpad
 - `docs/roadmap.md` — praktický plán kroků od nuly do prvního použitelného prototypu.
 - `docs/parts-import.md` — implementovaný import part listu z OEMMotorparts do JSON.
 - `docs/asset-layout.md` — kam ukládat 3D modely dílů, sestavy a metadata v Android app assets.
+- `docs/quick-start-modeling-cs.md` — stručný postup od CAD modelu po uložení do appky.
 
 ## První doporučení
 
