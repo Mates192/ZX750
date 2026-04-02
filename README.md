@@ -9,6 +9,7 @@ Tento repozitář obsahuje návrh startu projektu Android aplikace pro 3D rozpad
 - `docs/data-model.md` — návrh datového modelu pro díly, vazby mezi díly a vyhledávání.
 - `docs/roadmap.md` — praktický plán kroků od nuly do prvního použitelného prototypu.
 - `docs/parts-import.md` — implementovaný import part listu z OEMMotorparts do JSON.
+- `docs/asset-layout.md` — kam ukládat 3D modely dílů, sestavy a metadata v Android app assets.
 
 ## První doporučení
 
@@ -31,3 +32,12 @@ python tools/scrape_oemmotorparts.py \
 
 
 Dataset pro distribuci s appkou ukládej do `app/src/main/assets/parts/`.
+
+
+## Prostředí aplikace
+
+Je připravený základ Android projektu (Gradle + app modul + Compose).
+
+- Hlavní modely ukládej do `app/src/main/assets/models/`
+- Metadata do `app/src/main/assets/metadata/`
+- Scénové manifesty do `app/src/main/assets/scenes/`
