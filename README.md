@@ -20,7 +20,7 @@ Tento repozitář obsahuje návrh startu projektu Android aplikace pro 3D rozpad
 
 ## Import part listu
 
-Připravený skript:
+Připravené skripty (stažení + bundling do assets):
 
 ```bash
 python tools/scrape_oemmotorparts.py \
@@ -29,3 +29,5 @@ python tools/scrape_oemmotorparts.py \
   --json-out data/processed/zx750a1_parts.json
 ```
 
+
+Dataset pro distribuci s appkou ukládej do `app/src/main/assets/parts/`.
