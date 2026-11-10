@@ -1,0 +1,7 @@
+{
+  "sceneId": "zx750a1-full-bike",
+  "label": "ZX750 A1 Full Assembly",
+  "assemblyGlb": "models/assemblies/full_bike/zx750a1_full.glb",
+  "partsMetadata": "metadata/zx750a1_parts.json",
+  "version": 1
+}
